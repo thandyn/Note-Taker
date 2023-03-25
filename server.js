@@ -2,12 +2,6 @@ const express = require("express");
 const path = require("path");
 const fs = require("fs");
 const uniqid = require("uniqid");
-// let notes = require("./db/db.json");
-// let newNotes = {
-//   title,
-//   text,
-//   id: uniqid(),
-// };
 
 const app = express();
 const PORT = 3001;
