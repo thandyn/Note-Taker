@@ -13,7 +13,7 @@ This project was mainly working on writing the backend code for an already devel
   - [Test](#test)
 
 ## Installation
-Type in "npi i" in the terminal to install server and uniqid npm
+Type in "npm i" in the terminal to install server and uniqid npm
 
 ## Usage
 ![home page](./images/ss1.PNG)
