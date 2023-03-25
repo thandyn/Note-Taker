@@ -3,11 +3,11 @@ const path = require("path");
 const fs = require("fs");
 const uniqid = require("uniqid");
 // let notes = require("./db/db.json");
-let newNotes = {
-  title,
-  text,
-  id: uniqid(),
-};
+// let newNotes = {
+//   title,
+//   text,
+//   id: uniqid(),
+// };
 
 const app = express();
 const PORT = 3001;
@@ -37,11 +37,11 @@ app.get("/api/notes", (req, res) => {
 app.post("/api/notes", (req, res) => {
   const { title, text } = req.body;
   if (title && text) {
-    // let newNotes = {
-    //   title,
-    //   text,
-    //   id: uniqid(),
-    // };
+    let newNotes = {
+      title,
+      text,
+      id: uniqid(),
+    };
     const notesData = JSON.stringify(newNotes);
 
     fs.readFile("./db/db.json", "utf8", (err, data) => {
